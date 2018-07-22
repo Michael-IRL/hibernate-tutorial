@@ -25,6 +25,10 @@ public class QueryStudentDemo
 			//start a transaction
 			session.beginTransaction();
 			
+			//query students
+			
+			//display students
+			
 			
 			//commit transaction
 			session.getTransaction().commit();
