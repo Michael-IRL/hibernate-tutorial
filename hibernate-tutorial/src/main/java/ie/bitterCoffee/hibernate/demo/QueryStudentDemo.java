@@ -11,6 +11,7 @@ import ie.bitterCoffee.hibernate.demo.entity.Student;
 public class QueryStudentDemo
 {
 
+	@SuppressWarnings("unchecked")
 	public static void main(String[] args)
 	{
 		//Create session factory
