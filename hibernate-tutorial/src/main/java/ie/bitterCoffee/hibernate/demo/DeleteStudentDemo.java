@@ -31,10 +31,14 @@ public class DeleteStudentDemo
 			System.out.println("\nGetting student with id: "+studentId);
 			
 			Student myStudent = session.get(Student.class, studentId);
-			
+			/*
 			//delete the student
 			System.out.println("Delete the student: "+myStudent);
-			session.delete(myStudent);
+			session.delete(myStudent);*/
+			
+			//delete student id = 2
+			System.out.println("Delete student id=2 ");
+			session.createQuery("delete from Student where id =2").executeUpdate();
 						
 			//commit transaction
 			session.getTransaction().commit();			
